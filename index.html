@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+  <script type="text/javascript" src="main.js"> </script>
+
+</head>
+<body>
+
+<h1 style="text-align: center; color: #28a745;">Student Registration</h1>
+
+<div class="container">
+  <!-----Column1-------->
+  <div class="column" style="background-color:#b8dec2;">
+    <h4 style="text-align: center;">Personal Information</h4>
+    <form class="col-lg-12 m-auto p-b-100">
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Roll Number : </label><br>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Student Name : </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Father's Name : </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Mother's Name : </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+      
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Date of Birth : </label>
+        <div class="col-sm-8">
+          <input type="date" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Address : </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+      
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Contact Number : </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputPassword" placeholder="">
+        </div>  
+      </div>
+
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-4 col-form-label">Gender : </label>
+        <div class="custom-control custom-radio custom-control-inline col-sm-4">
+          <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+          <label class="custom-control-label" for="defaultInline1">Male</label>
+        </div>  
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+          <label class="custom-control-label" for="defaultInline2">Female</label>
+        </div>
+      </div>
+     
+    </form>
+  </div>
+  <!------Column2------->
+  <div class="column" style="background-color:#b8dec2;">
+    <h4 style="text-align: center;">Educational Information</h4>
+    <form>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">SSC Group</label>
+          </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">Science</option>
+              <option value="2">Commerce</option>
+              <option value="3">Arts</option>
+            </select>
+          </div>
+
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-4 col-form-label">Subjects : </label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="inputPassword" value="Bangla" readonly>
+              <input type="text" class="form-control" id="inputPassword" value="English" readonly>
+              <input type="text" class="form-control" id="inputPassword" value="ICT" readonly>
+            </div>  
+        </div>
+
+        
+
+
+      <div class="input-group mb-3">
+        <tr class="input-group-prepend">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">HSC Group</label>
+          </div>
+          <td>
+            <select class="custom-select" name="meal" id="meal" onChange="changecat(this.value); changeman(this.value); changegro(this.value); changegroa(this.value)">
+              <option value="" disabled selected>Select</option>
+              <option value="A">Science</option>
+              <option value="B">Commerce</option>
+              <option value="C">Arts</option>
+            </select>
+          </td>
+        </tr>
+      </div>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">1st Subject</label>
+            </div>
+            <select class="custom-select" name="category" id="group" >
+              <option value="" disabled selected>Select</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">2nd Subject</label>
+            </div>
+            <select class="custom-select" name="category" id="groupa" >
+              <option value="" disabled selected>Select</option>
+            </select>
+        </div>
+
+       <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Compulsory</label>
+            </div>
+            <select class="custom-select" name="category" id="category" >
+              <option value="" disabled selected>Select</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Optional</label>
+            </div>
+            <select class="custom-select" name="category" id="optional" >
+              <option value="" disabled selected>Select</option>
+            </select>
+        </div>
+
+       
+
+      </tr>
+    </form>
+  </div>
+  
+<button type="submit" class="btn btn-success col-lg-12">Submit</button>
+
+</div>
+</body>
+</html>
